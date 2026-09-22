@@ -1,0 +1,35 @@
+{
+  "id": "out_of_stock",
+  "transcript": [
+    {
+      "role": "user",
+      "content": "Oi, vocês têm o 'Monitor 27 UltraWide Nimbus' em estoque?"
+    },
+    {
+      "role": "assistant",
+      "content": "Desculpe, mas não encontramos o 'Monitor 27 UltraWide Nimbus' disponível em nosso catálogo. Se precisar de ajuda com outro produto ou tiver interesse em algo similar, estou à disposição!"
+    },
+    {
+      "role": "user",
+      "content": "ENCERRAR. Obrigado de qualquer forma!"
+    },
+    {
+      "role": "assistant",
+      "content": "De nada! Se precisar de mais alguma coisa, é só chamar. Estou aqui para ajudar!"
+    }
+  ],
+  "tool_calls_log": [
+    {
+      "name": "buscar_produto",
+      "arguments": {
+        "query": "Monitor 27 UltraWide Nimbus"
+      },
+      "result": {
+        "produtos": []
+      }
+    }
+  ],
+  "n_turns": 2,
+  "success": false,
+  "guardrail_violations": 0
+}

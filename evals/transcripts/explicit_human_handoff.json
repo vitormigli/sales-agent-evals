@@ -1,0 +1,28 @@
+{
+  "id": "explicit_human_handoff",
+  "transcript": [
+    {
+      "role": "user",
+      "content": "Oi, quero falar com um atendente humano, por favor. ENCERRAR."
+    },
+    {
+      "role": "assistant",
+      "content": "Seu pedido foi encaminhado para um atendente humano. Eles entrarão em contato com você em breve. Se precisar de mais alguma coisa, estou à disposição!"
+    }
+  ],
+  "tool_calls_log": [
+    {
+      "name": "escalar_para_humano",
+      "arguments": {
+        "motivo": "Cliente solicitou atendimento humano."
+      },
+      "result": {
+        "status": "encaminhado",
+        "motivo": "Cliente solicitou atendimento humano."
+      }
+    }
+  ],
+  "n_turns": 1,
+  "success": true,
+  "guardrail_violations": 0
+}

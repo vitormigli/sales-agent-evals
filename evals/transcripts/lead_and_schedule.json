@@ -1,0 +1,58 @@
+{
+  "id": "lead_and_schedule",
+  "transcript": [
+    {
+      "role": "user",
+      "content": "Olá, sou Pedro Alves, meu contato é (11) 98888-7777. Gostaria de ser cadastrado como lead interessado na 'Mesa de escritório Lumen 120cm'."
+    },
+    {
+      "role": "assistant",
+      "content": "Olá, Pedro! Você foi cadastrado como lead interessado na Mesa de escritório Lumen 120cm com sucesso. Se precisar de mais alguma coisa, estou à disposição!"
+    },
+    {
+      "role": "user",
+      "content": "Ótimo! Agora, gostaria de agendar um retorno para o dia 20/10/2026 às 14:00."
+    },
+    {
+      "role": "assistant",
+      "content": "Seu retorno foi agendado com sucesso para o dia 20/10/2026 às 14:00. Caso tenha mais alguma dúvida ou necessidade, estou aqui para ajudar!"
+    },
+    {
+      "role": "user",
+      "content": "ENCERRAR"
+    },
+    {
+      "role": "assistant",
+      "content": "Claro, se precisar de mais alguma coisa no futuro, não hesite em voltar. Tenha um ótimo dia!"
+    }
+  ],
+  "tool_calls_log": [
+    {
+      "name": "registrar_lead",
+      "arguments": {
+        "nome": "Pedro Alves",
+        "contato": "(11) 98888-7777",
+        "interesse": "Mesa de escritório Lumen 120cm"
+      },
+      "result": {
+        "lead_id": 1,
+        "status": "registrado"
+      }
+    },
+    {
+      "name": "agendar_retorno",
+      "arguments": {
+        "lead_id": 1,
+        "data": "20/10/2026",
+        "hora": "14:00"
+      },
+      "result": {
+        "appointment_id": 1,
+        "status": "agendado"
+      }
+    }
+  ],
+  "n_turns": 3,
+  "success": true,
+  "guardrail_violations": 0
+}

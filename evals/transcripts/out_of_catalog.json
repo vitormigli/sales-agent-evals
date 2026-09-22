@@ -1,0 +1,36 @@
+{
+  "id": "out_of_catalog",
+  "transcript": [
+    {
+      "role": "user",
+      "content": "Vocês vendem geladeiras?"
+    },
+    {
+      "role": "assistant",
+      "content": "Estou encaminhando sua pergunta para um atendente humano, pois geladeiras não estão no nosso catálogo de móveis e eletrônicos de escritório. Em breve, você receberá assistência."
+    },
+    {
+      "role": "user",
+      "content": "Entendi, obrigado pela informação! ENCERRAR."
+    },
+    {
+      "role": "assistant",
+      "content": "De nada! Se tiver mais alguma dúvida ou precisar de ajuda com produtos do nosso catálogo, estou à disposição."
+    }
+  ],
+  "tool_calls_log": [
+    {
+      "name": "escalar_para_humano",
+      "arguments": {
+        "motivo": "O cliente está perguntando sobre um produto fora do nosso catálogo de móveis e eletrônicos de escritório."
+      },
+      "result": {
+        "status": "encaminhado",
+        "motivo": "O cliente está perguntando sobre um produto fora do nosso catálogo de móveis e eletrônicos de escritório."
+      }
+    }
+  ],
+  "n_turns": 2,
+  "success": true,
+  "guardrail_violations": 0
+}

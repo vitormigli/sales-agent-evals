@@ -1,0 +1,38 @@
+{
+  "id": "lead_registration",
+  "transcript": [
+    {
+      "role": "user",
+      "content": "Olá, tenho interesse na 'Cadeira ergonômica Aurora' e gostaria que me contatassem sobre esse produto. Meu nome é Marina Souza e meu e-mail é marina.souza@example.com."
+    },
+    {
+      "role": "assistant",
+      "content": "Seu interesse na 'Cadeira ergonômica Aurora' foi registrado com sucesso, Marina. Em breve, nossa equipe entrará em contato com você! Se precisar de mais alguma coisa, é só avisar."
+    },
+    {
+      "role": "user",
+      "content": "Obrigado pela confirmação! ENCERRAR."
+    },
+    {
+      "role": "assistant",
+      "content": "De nada, Marina! Se você tiver mais alguma pergunta ou precisar de ajuda, estou à disposição. Tenha um ótimo dia!"
+    }
+  ],
+  "tool_calls_log": [
+    {
+      "name": "registrar_lead",
+      "arguments": {
+        "nome": "Marina Souza",
+        "contato": "marina.souza@example.com",
+        "interesse": "Cadeira ergonômica Aurora"
+      },
+      "result": {
+        "lead_id": 1,
+        "status": "registrado"
+      }
+    }
+  ],
+  "n_turns": 2,
+  "success": true,
+  "guardrail_violations": 0
+}

@@ -1,0 +1,54 @@
+{
+  "id": "off_topic_question",
+  "transcript": [
+    {
+      "role": "user",
+      "content": "Olá, gostaria de saber se você tem camisetas disponíveis na cor azul."
+    },
+    {
+      "role": "assistant",
+      "content": "Obrigado por sua compreensão! Encaminhei sua pergunta para um atendente humano que poderá ajudá-lo com informações sobre camisetas."
+    },
+    {
+      "role": "user",
+      "content": "Qual a capital da França?"
+    },
+    {
+      "role": "assistant",
+      "content": "Essa pergunta foi encaminhada para um atendente humano, que poderá ajudá-lo com informações. Se precisar de algo relacionado a móveis ou eletrônicos de escritório, estou à disposição!"
+    },
+    {
+      "role": "user",
+      "content": "ENCERRAR"
+    },
+    {
+      "role": "assistant",
+      "content": "Se precisar de mais assistência no futuro, estarei aqui para ajudar. Tenha um ótimo dia!"
+    }
+  ],
+  "tool_calls_log": [
+    {
+      "name": "escalar_para_humano",
+      "arguments": {
+        "motivo": "O cliente está perguntando sobre camisetas, que não estão no catálogo de móveis e eletrônicos de escritório."
+      },
+      "result": {
+        "status": "encaminhado",
+        "motivo": "O cliente está perguntando sobre camisetas, que não estão no catálogo de móveis e eletrônicos de escritório."
+      }
+    },
+    {
+      "name": "escalar_para_humano",
+      "arguments": {
+        "motivo": "O cliente está perguntando sobre a capital da França, que não é um produto ou serviço da loja."
+      },
+      "result": {
+        "status": "encaminhado",
+        "motivo": "O cliente está perguntando sobre a capital da França, que não é um produto ou serviço da loja."
+      }
+    }
+  ],
+  "n_turns": 3,
+  "success": true,
+  "guardrail_violations": 0
+}
